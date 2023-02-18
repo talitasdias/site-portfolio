@@ -18,11 +18,19 @@
 
 body{
     font-family: var(--fonte002);
-    overflow: hidden;
+   
+    background-color: var(--cor003);
 }
 
 h1{
     font-family: var(--fonte001);
+}
+
+h2{
+    font-family: var(--fonte001);
+    line-height: 64px;
+    font-size: 56px;
+    color: var(--cor001);
 }
 
 .section-hero{
@@ -32,7 +40,6 @@ h1{
     justify-content: flex-start;
     width: 100vw;
     height: 100vh;
-    background-color: var(--cor003);
 }
 
 .barra-navegacao{
@@ -97,7 +104,7 @@ button{
 .hero-info-image{
     width: 400px;
     border-radius: 40px;
-    border: 4px solid #219653;
+    border: 4px solid var(--cor002);
 }
 
 .hero-info-icons-container{
@@ -109,3 +116,55 @@ button{
     margin-top: 24px;
 }
 
+.section-abilities{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 64px 0px;
+}
+
+.section-abilities > h2{
+    width: 500px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+strong{
+    font-family: var(--fonte001);
+    line-height: 64px;
+    font-size: 56px;
+    color: var(--cor002);
+}
+
+.ability-card-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    align-content: center;
+    justify-content: center;
+    column-gap: 36px;
+    margin-top: 48px;
+}
+
+.ability-card{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 312px;
+    height: 690px;
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.ability-card-icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor002);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
